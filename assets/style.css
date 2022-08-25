@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
 body {
     margin: 0 auto;
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-family: 'Helvetica Neue,Helvetica','Segoe UI','Lato',Arial,Helvetica,sans-serif;
+}
+
+:root {
+    --dark-light: #424242;
+    --white: #f8f8f8;
+    --white-dark: #ddd;
+    --border-dark: #181818;
 }
 
 .main-profile {
     margin: 0 auto;
     text-align: center;
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: var(--white);
     border-bottom: solid 1px #f2f2f2;
-    color: #424242;
+    color: var(--dark-light);
 }
 
 .pic {
@@ -21,7 +26,7 @@ body {
 .pic>img {
     border-radius: 180px;
     box-shadow: 0 2px 42px #42424264;
-    border: solid 1px #ddd;
+    border: solid 1px var(--white-dark);
 }
 
 .outro {
@@ -51,7 +56,7 @@ div>li {
     max-width: 600px;
     height: 300px;
     background-color: #323232;
-    border: 1px solid #181818;
+    border: 1px solid var(--border-dark);
     border-radius: 8px;
     margin-top: 12px;
     box-shadow: 0 2px 22px #00000082;
@@ -61,11 +66,11 @@ div>li {
     text-align: center;
     position: relative;
     height: 24px;
-    background-color: #424242;
+    background-color: var(--dark-light);
     color: #d8d8d8;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    border-bottom: solid 1px #181818;
+    border-bottom: solid 1px var(--border-dark);
     border-top: solid 1px #9a9a9a;
 }
 
@@ -90,14 +95,16 @@ div>li {
     margin-left: 4px;
 }
 
+.c-at, .c-prompt {
+    font-family: 'consolas', 'monospace';
+}
+
 .c-at {
     color: #1085d3;
-    font-family: 'consolas', 'monospace';
 }
 
 .c-prompt {
     color: #37d310;
-    font-family: 'consolas', 'monospace';
 }
 
 .c-prompt-title {
@@ -107,11 +114,11 @@ div>li {
 
 .c-prompt-output {
     font-size: 14px;
-    color: #ddd;
+    color: var(--white-dark);
 }
 
 hr {
-    border: solid 1px #424242;
+    border: solid 1px var(--dark-light);
 }
 
 .footer {
@@ -120,8 +127,8 @@ hr {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #f8f8f8;
-    border-top: 1px solid #ddd;
+    background-color: var(--white);
+    border-top: 1px solid var(--white-dark);
     text-align: center;
 }
 
